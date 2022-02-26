@@ -341,7 +341,7 @@ header{
 }
 @media(max-width:1024px){
     .works{
-        height: 200vw;
+        height: 115vw;
     }
 }
 @media(max-width:600px){
@@ -599,6 +599,8 @@ header{
      font-size:1.62vw;
      width:8vw;
      margin-top:2vw;
+     display:flex;
+     flex-flow:column;
     }
 }
 @media(max-width:600px){
