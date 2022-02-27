@@ -1037,3 +1037,11 @@ header{
         font-size:1.2vw;
     }
 }
+@media(max-width:1024px){
+    .copy1{
+        display:none;
+    }
+    .copy2{
+        font-size:4vw;
+    }
+}
