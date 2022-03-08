@@ -49,7 +49,8 @@ body{
 }
 @media(max-width:600px){
     .title{
-        font-size:5vw;
+        font-size:7vw;
+        margin:10vw 0;
     }
 }
 .title span{
@@ -162,6 +163,7 @@ header{
 
 .first_view{
     position:relative;
+    top:0;
     width:100%;
     height:49.32vw;
     background-image:url("../img/fv.png");
@@ -171,7 +173,7 @@ header{
     .first_view{
         position:relative;
         width:100%;
-        height:450px;
+        height:630px;
         background-image:url("../img/fv.png");
         object-fit:cover;
         background-position:75%;
@@ -210,13 +212,13 @@ header{
 }
 @media(max-width:600px){
     .first_view_container{
-        width:20vw;
-        height:90vw;
-        left:15vw;
+        width:35vw;
+        height:100vw;
+        left:5vw;
     }
     .first_view h1{
         font-size:5vw;
-        padding:1.2vw 1.3vw 0;
+        padding:3.2vw 4.6vw 0;
     }
 }
 .main_copy2 span{
@@ -234,7 +236,7 @@ header{
 }
 @media(max-width:600px){
     .belief{
-        height:123vw;
+        height:143vw;
         text-align:center;
     }
 }
@@ -248,7 +250,7 @@ header{
 }
 @media(max-width:600px){
     #belief_con{
-        padding:5.44vw 0 4.27vw;
+        padding:16vw 0 16vw;
         flex-flow:column;
     }
 }
@@ -281,6 +283,7 @@ header{
 @media(max-width:600px){
     .belief_title{
         font-size:5vw;
+        margin:3vw 0;
     }
 }
 .belief_text{
@@ -291,7 +294,6 @@ header{
 @media(max-width:1024px){
     .belief_text{
         font-size:1.65vw;
-  
     }
     #belief_tab_br1,#belief_tab_br2{
         display:block;
@@ -299,13 +301,15 @@ header{
 }
 @media(max-width:600px){
     .belief_text{
-        font-size:3.3vw;
+        font-size:3.5vw;
         line-height:7vw;
         height:33vw;
         margin-top:4vw;
+        margin-bottom:4vw;
         text-align:left;
     }
-    #belief_tab_br1,#belief_tab_br2{
+    #belief_tab_br1,#belief_tab_br2,
+    .pc_br{
         display:none;
     }
 }
@@ -345,7 +349,8 @@ header{
 }
 @media(max-width:600px){
     .works{
-        height: 360vw;
+        height: 465vw;
+        padding-top:5vw;
     }
 }
 .works h3{
@@ -354,14 +359,24 @@ header{
     font-size:0.833vw;
     padding-bottom:1.77vw;
 }
+.br_works_text{
+    display:none;
+}
 @media(max-width:1024px){
     .works h3{
         font-size:1.75vw;
     }
+    .br_works_text{
+        display:none;
+    }
 }
 @media(max-width:600px){
     .works h3{
-        font-size:3.3vw;
+        font-size:4.5vw;
+        margin:10vw 0;
+    }
+    .br_works_text{
+        display:block;
     }
 }
 .works_contents{
@@ -393,11 +408,11 @@ header{
 @media(max-width:600px){
     #works_container{
         flex-flow:column;
-        height:320vw;
+        height:400vw;
     }
     .works_contents{
         width:90vw;
-        height:100vw;
+        height:130vw;
         flex-flow:column;
         justify-content: space-between;
   
@@ -421,8 +436,8 @@ header{
 }
 @media(max-width:600px){
     .contents_title{
-        padding-top:5vw;
-        font-size:5.5vw;
+        padding:10vw 0;
+        font-size:6.5vw;
     }
 }
 .contents_text1{
@@ -461,13 +476,13 @@ header{
 }
 @media(max-width:600px){
     .contents_text1,.contents_text3{
-        font-size:4vw;
+        font-size:4.5vw;
         padding:3vw 4vw;
         padding-top:1.7vw;
         line-height:1.8;
     }
     .contents_text2{
-        font-size:4vw;
+        font-size:4.5vw;
         padding:3vw 4vw;
         line-height:1.8;
     }
@@ -489,6 +504,11 @@ header{
 }
 @media(max-width:600px){
     .works_contents img{
+        width:50vw;
+        height:50vw;
+        margin:0 auto;
+    }
+    #works_contents_img3{
         width:45vw;
         height:45vw;
         margin:0 auto;
@@ -532,8 +552,10 @@ header{
 }
 @media(max-width:600px){
     .news{
-      height:200vw;
+      height:300vw;
+      padding-top:10vw;
     }
+
 }
 .news h2{
     padding-top:4.5vw;
@@ -543,7 +565,7 @@ header{
     height:20.3125vw;
     border-radius:1.563vw;
     background-color:white;
-    box-shadow:0 0.156vw 0.313vw #000000;
+    box-shadow:0 0.156vw 0.313vw rgba(0, 0, 0, 0.16);
     padding-top:1.24vw;
 }
 @media(max-width:1024px){
@@ -554,7 +576,7 @@ header{
 }
 @media(max-width:600px){
     #news_container{
-      height:180vw;
+      height:210vw;
     }
 }
 .news tr{
@@ -663,8 +685,8 @@ header{
     }
     .text,.text2{
         padding:10vw 0;
-        font-size:4vw;
-        line-height:5vw;
+        font-size:4.5vw;
+        line-height:5.8vw;
         margin:0;
     }
 }
