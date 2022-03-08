@@ -291,13 +291,12 @@ header{
     line-height:2vw;
     margin-top:1.4vw;
 }
+
 @media(max-width:1024px){
     .belief_text{
         font-size:1.65vw;
     }
-    #belief_tab_br1,#belief_tab_br2{
-        display:block;
-    }
+    
 }
 @media(max-width:600px){
     .belief_text{
@@ -308,7 +307,6 @@ header{
         margin-bottom:4vw;
         text-align:left;
     }
-    #belief_tab_br1,#belief_tab_br2,
     .pc_br{
         display:none;
     }
@@ -576,7 +574,7 @@ header{
 }
 @media(max-width:600px){
     #news_container{
-      height:210vw;
+      height:205vw;
     }
 }
 .news tr{
@@ -605,8 +603,9 @@ header{
 }
 .news tr:last-child{
     border-bottom:none;
-    justify-content:right;
-
+    justify-content:flex-end;
+    -webkit-box-pack: flex-end;
+	-ms-flex-pack: flex-end;
 }
 .news th{
     display:flex;
@@ -623,6 +622,7 @@ header{
      display:flex;
      flex-flow:column;
     }
+    
 }
 @media(max-width:600px){
     .news th{
@@ -693,7 +693,7 @@ header{
 .more{
     margin-top: 2vw;
     font-size:0.85vw;
-    margin-right:-2.3vw;
+   /* margin-right:-2.3vw;*/
 }
 .fa-solid{
     width:2vw;
@@ -703,11 +703,14 @@ header{
 @media(max-width:1024px){
     .more{
         font-size:1.8vw;
-        padding-left:44vw;
+        margin-top: -3vw;
     }
     .fa-solid{
         width:2vw;
         height:auto;
+    }
+    #last_td{
+        flex-flow:row;
     }
 }
 @media(max-width:600px){
@@ -718,6 +721,9 @@ header{
     .fa-solid{
         width:10vw;
         height:auto;
+    }
+    #last_td{
+        flex-flow:row;
     }
 }
 
